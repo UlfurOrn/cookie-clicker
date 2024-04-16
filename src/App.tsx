@@ -1,8 +1,8 @@
 import "./App.css";
-import CookieContainer from "./components/CookieContainer.tsx";
+import CookieClicker from "./components/CookieClicker.tsx";
 
 function App() {
-  return <CookieContainer />;
+  return <CookieClicker />;
 }
 
 export default App;

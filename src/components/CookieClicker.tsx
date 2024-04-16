@@ -1,9 +1,12 @@
-import CookieContainer from "./CookieContainer.tsx";
+import CookieContainer from "./CookieContainer";
+import {useState} from "react";
 
 function CookieClicker() {
+  const [cookieCount, setCookieCount] = useState(0);
+
   return (
     <div>
-      <CookieContainer />
+      <CookieContainer cookieCount={cookieCount} onClick={() => setCookieCount(cookieCount + 1)}/>
     </div>
   );
 }

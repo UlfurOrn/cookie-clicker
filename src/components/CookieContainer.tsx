@@ -1,13 +1,16 @@
-import cookieLogo from "../assets/cookie.png";
-import { useState } from "react";
+import cookieLogo from "/cookie.png";
 
-function CookieContainer() {
-  const [count, setCount] = useState(0);
 
+interface CookieContainerProps {
+    cookieCount: number;
+    onClick: () => void;
+}
+
+function CookieContainer({cookieCount, onClick}: CookieContainerProps) {
   return (
     <div>
-      <h1>Cookies: {count}</h1>
-      <img src={cookieLogo} alt="Cookie" onClick={() => setCount(count + 1)} />
+      <h1>Cookies: {cookieCount}</h1>
+      <img src={cookieLogo} alt="Cookie" onClick={onClick} />
     </div>
   );
 }
