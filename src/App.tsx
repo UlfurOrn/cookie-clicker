@@ -16,7 +16,7 @@ function App() {
                 <a href="https://react.dev" target="_blank">
                     <img src={reactLogo} className="logo react" alt="React logo"/>
                 </a>
-                <img src={cookieLogo} className="logo react" alt="React logo" />
+                <img src={cookieLogo} className="logo react" alt="React logo" onClick={() => setCount((count) => count + 1)} />
             </div>
             <h1>Vite + React</h1>
             <div className="card">
