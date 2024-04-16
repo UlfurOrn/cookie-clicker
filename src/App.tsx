@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import cookieLogo from './assets/cookie.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -15,6 +16,7 @@ function App() {
                 <a href="https://react.dev" target="_blank">
                     <img src={reactLogo} className="logo react" alt="React logo"/>
                 </a>
+                <img src={cookieLogo} className="logo react" alt="React logo" />
             </div>
             <h1>Vite + React</h1>
             <div className="card">
